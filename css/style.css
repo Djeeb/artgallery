@@ -1,3 +1,5 @@
+/* ---------- RESET ---------- */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -30,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  padding: 2rem;
 }
 ol, ul {
 	list-style: none;
@@ -45,4 +48,170 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* -------------------- GENERAL -------------------- */
+/* ---------- GENERAL ---------- */
+/* ---------- GENERAL ---------- */
+/* -------------------- GENERAL -------------------- */
+
+header {
+  background-color: #223240;
+  padding: 2rem 3rem;
+  justify-content: space-between;
+}
+
+.header__top {
+  color: #F7FEFF;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+p, span, label {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* -------------------- MENU -------------------- */
+
+
+/* ---------- MENU LEFT ---------- */
+
+/* ------ Logo ------ */
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 4.8rem;
+}
+
+/* --------- MENU MIDDLE --------- */
+
+.header__middle {
+  width: 65vw;
+}
+
+/* ---- Menu top ---- */
+
+.header__top {
+  justify-content: space-between;
+}
+
+.social__icon, .setting__icon {
+  color: #F7FEFF;
+  font-size: 1.4rem;
+}
+
+.header__social_icons .social__icon:not(:last-child) {
+  margin-right: .8rem;
+}
+
+input[type='text'] {
+  /* appearance: none; */
+  width: 25rem;
+  padding-top: .3rem
+}
+
+.header__usersettings_icons .setting__icon:not(:last-child) {
+  margin-right: .8rem;
+}
+
+.header__usersettings_icons a span {
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  padding: .4rem;
+  background-color: #F0B365;
+  border-radius: 50%;
+  /* transform: translateX(10px) translateY(10px); */
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+.userprofile {
+  margin-bottom: 0.4rem;
+}
+
+.userprofile__photo {
+  width: 2rem;
+  border-radius: 50%;
+  outline: 2px solid #F7FEFF;
+  margin-left: .8rem;
+}
+
+.user__nickname, .user__initiative {
+  font-size: .9rem;
+  margin-left: .8rem;
+  justify-content: center;
+}
+
+/* --- Menu bottom -- */
+
+nav.header__navigation {
+  margin-top: 1rem;
+  border-bottom: 1px solid #F0B365;
+  justify-content: space-around;
+
+}
+
+.header__nav_item {
+  color: #F7FEFF;
+  justify-content: space-around;
+  /* margin: 1.4rem; */
+}
+
+/* .header__navigation .divider {
+  width: 30rem;
+  border: 4px solid #F0B365;
+} */
+
+/* ---------- MENU RIGHT ---------- */
+
+#certif_text {
+  font-size: .8rem;
+  padding-bottom: 0.4rem;
+}
+
+#goaltext {
+  padding-top: .6rem;
+  font-size: .8rem;
+}
+
+#certif_counter {
+  width: auto;
+  background-color: #F7FEFF;
+  padding: .4rem 1rem;
+  border-radius: 6px;
+}
+#artwork__number {
+  color: #223240;
+  font-size: 1.2rem;
+}
+
+#goaltext {
+  color:#F7FEFF;
+}
+
+progress {
+  width: auto;
 }
