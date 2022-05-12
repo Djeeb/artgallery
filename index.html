@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Art + Furious | La marketplace qui soutient la pop culture</title>
 </head>
 <body>
@@ -12,40 +13,88 @@
 
         <div class="header header__left">
             <!-- Logo -->
-            <img class="header__logo" src="" alt="">
+            <img class="header__logo" href="index.html" src="img/logo_artcore-white.png" alt="logo de la marketplace Art">
         </div>
 
         <div class="header header__middle">
             <div class="header__middle header__top">
                 <div class="header__social_icons">
                     <!-- Social networks -->
-                    <!-- Mail icon -->
-                    <svg viewBox="0 0 20 20" width="50">
-                        <use xlink:href="img/sprite.svg#icon-mail"></use>
-                    </svg>
-                    <!-- Instagram icon -->
-                    <!-- Linkedin icon -->
-                    <!-- Twitter icon -->
-                    <!-- Youtube icon -->
-                    <!-- Behance icon -->
+                    <a class="social__icon" href="mailto:email@example.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a class="social__icon" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="social__icon" href="https://www.linkedin.com/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a class="social__icon" href="https://twitter.com/">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a class="social__icon" href="https://www.youtube.com/">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="social__icon" href="https://www.behance.net/">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
                 </div>
                 <div class="header__searchbar">
                     <!-- Search bar -->
+                    <input type="text" id="header__searchbar header__searchbar--input" placeholder="Rechercher un(e) artiste, une oeuvre d'art ou un thème">
+                    <button class="header__searchbar header__searchbar--button">
+                        <i class="header__searchbar--icon fa-solid fa-magnifying-glass">
+                        </i>
+                    </button>
                 </div>
-                <div class="header__usersettings">
-                    <!-- User settings icons -->
+
+                <!-- User settings icons -->
+                <div class="header__usersettings_icons">
+                    <!-- Language -->
+                    <a class="language__icon" href="">
+                        <i class="fa-solid fa-earth-europe"></i>
+                    </a>
+                    <!-- Currency -->
+                    <a class="currency__icon" href="">
+                        <i class="fa-solid fa-euro-sign"></i>
+                    </a>
+                    <!-- Inbox -->
+                    <a class="inbox__icon" href="">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span class="header__notification">14</span>
+                    </a>
+                    <!-- Wishlist -->
+                    <a class="wishlist__icon" href="">
+                        <i class="fa-solid fa-list"></i>
+                        <span class="header__notification">2</span>
+                    </a>
+                    <!-- Shopping cart -->
+                    <a class="shoppingcart__icon" href="">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        <span class="header__notification">4</span>
+                    </a>
+                    <!-- Account -->
+                    <div class="userprofile">
+                        <a id="login" href="login.html">
+                            <img class="userprofile userprofile__photo" src="img/lucas-lenzi-uQYw4NQP6i4-unsplash-small.jpg" alt="ta photo de profil">
+                        </a>
+                        <div class="userprofile userprofile__name">
+                            <span class="user__nickname">Djeeb</span>
+                            <span class="user__initiative">Amateur</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="header__middle header__bottom">
                 <nav class="header__navigation header__navigation--main">
                     <!-- Navigation -->
-                    <a class="header__nav_item" href=""></a>
-                    <a class="header__nav_item" href=""></a>
-                    <a class="header__nav_item" href=""></a>
-                    <a class="header__nav_item" href=""></a>
-                    <a class="header__nav_item" href=""></a>
-                    <a class="header__nav_item" href=""></a>
-                    <a class="header__nav_item" href=""></a>
+                    <a class="header__nav_item" href="index.html">Accueil</a>
+                    <a class="header__nav_item" href="artists.html">Les artistes</a>
+                    <a class="header__nav_item" href="shop.html">Le shop</a>
+                    <a class="header__nav_item" href="artistic-advices.html">Les conseils artistiques</a>
+                    <a class="header__nav_item" href="artistic-supports.html">Les soutiens artistiques</a>
+                    <a class="header__nav_item" href="community.html">La communauté</a>
+                    <a class="header__nav_item" href="news.html">Notre actu</a>
                 </nav>
                 <hr class="divider solid">
             </div>
