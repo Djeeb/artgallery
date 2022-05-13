@@ -217,6 +217,47 @@ progress {
   width: auto;
 }
 
+
+/* -------------------- MAIN -------------------- */
+
+/* ---------- NEW ARTISTS SECTION ---------- */
+
+section.hero {
+  background-image: linear-gradient(to right bottom, rgba(255, 209, 110, 0.8), rgba(44, 134, 150, 0.7)), url(../img/brian-miller-aDSJNPZUxxc-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 81vh;
+}
+
+.hero .hero__title {
+  color: #F7FEFF;
+  font-family: 'Montserrat';
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 12rem;
+  margin-bottom: 2rem;
+}
+
+.hero .hero__text {
+  color: #F7FEFF;
+  font-family: 'Montserrat';
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+button.cta__services {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  background-color: #39b5cb;
+  color: #F7FEFF;
+  border-radius: .4rem 2rem .4rem 2rem;
+  cursor: pointer;
+}
+
 /* -------------------- FOOTER -------------------- */
 
 footer {
