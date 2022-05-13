@@ -21,7 +21,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   padding: 2rem;
+  font-size: 62.5%;
 }
 ol, ul {
 	list-style: none;
@@ -86,6 +87,8 @@ a {
 p, span, label {
   font-family: "Montserrat", sans-serif;
 }
+
+
 
 /* -------------------- MENU -------------------- */
 
@@ -220,7 +223,7 @@ progress {
 
 /* -------------------- MAIN -------------------- */
 
-/* ---------- NEW ARTISTS SECTION ---------- */
+/* ---------- HERO SECTION ---------- */
 
 section.hero {
   background-image: linear-gradient(to right bottom, rgba(255, 209, 110, 0.8), rgba(44, 134, 150, 0.7)), url(../img/brian-miller-aDSJNPZUxxc-unsplash.jpg);
@@ -236,7 +239,7 @@ section.hero {
   font-weight: 700;
   letter-spacing: 1.5rem;
   text-transform: uppercase;
-  margin-top: 12rem;
+  padding-top: 12rem;
   margin-bottom: 2rem;
 }
 
@@ -256,6 +259,134 @@ button.cta__services {
   color: #F7FEFF;
   border-radius: .4rem 2rem .4rem 2rem;
   cursor: pointer;
+}
+
+/* ---------- NEW ARTISTS SECTION ---------- */
+
+.new-artists .new-artists__title {
+  font-size: 3rem;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  color: #112959;
+}
+
+span.new-artists__title--thin {
+  font-weight: 400;
+}
+
+.new-artists .paragraph__section {
+  display: flex;
+  width: 40vw;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: #112959;
+}
+
+/* ---------- BLOGPOSTS SECTION ---------- */
+
+.blogposts {
+  margin-top: 4rem;
+}
+
+.blog-post {
+  box-shadow: 0 1.4rem 8rem rgba(0,0,0, .2);
+  display: flex;
+  align-items: center;
+  border-radius: 0 2rem 1rem 2rem;
+  min-height: 24rem;
+  width:20%;
+  transform: translateX(8rem);
+  margin-right: 10rem;
+}
+
+.blog-post__img {
+  min-width: 12rem;
+  max-width: 12rem;
+  height: 16.5rem;
+  transform: translateX(-3rem);
+  transition: all .2s;
+}
+
+.blog-post__info {
+    transform: translateX(-2rem);
+}
+
+.blog-post__date {
+    display: block;
+    color: #2c8696;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.blog-post__date--day {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.blog-post__date--month {
+  font-size: 1.4rem;
+}
+
+.blog-post__title {
+  font-family: 'Average sans';
+  font-size: 1.6rem;
+  /* font-weight: bold; */
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.blog-post__text {
+  font-size: 1rem;
+  color: #223240;
+  line-height: 1.4rem;
+  margin-bottom: .5rem;
+}
+
+.blog-post__img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-3rem);
+    background: linear-gradient(to right bottom, 
+                rgba(#ffd16e, 0), 
+                rgba(#2c8696, 0));
+    z-index: 20;
+    box-shadow: .5rem .5rem 3rem 3px rgba(0,0,0, .2);
+}
+
+.blog-post__img:hover {
+    transform: translateY(-1rem) scale(1.1);
+}
+
+.btn-text {
+  /* margin: 2rem 0; */
+}
+
+.blog-post__icons {
+  padding: .8rem 0;
+}
+
+.blog-post__icons li{
+    font-size: .8rem;
+    display: inline;
+    list-style: none;
+    padding-right: 1.5rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .4rem .8rem .4rem .8rem;
 }
 
 /* -------------------- FOOTER -------------------- */
